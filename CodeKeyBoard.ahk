@@ -1,18 +1,20 @@
-﻿; Habilita debug de teclas digitadas
-; #InstallKeybdHook
+﻿#NoEnv
+#Warn
+;SendMode Input  ;
+SetWorkingDir %A_ScriptDir%  ;
+#InstallKeybdHook
 
-; ABNT2 - Remapeia IJKL arrows com shift direito
-;
-; Segure o shift direito do teclado e as seguinte teclas:
-; I - Cima
-; J - Esquerda
-; K - Baixo
-; L - Direita
-;
-RShift & SC01A:: Send {Blind}{RShift up}{Up}
-RShift & ç:: Send {Blind}{RShift up}{Left}
-RShift & SC028:: Send {Blind}{RShift up}{Down}
-RShift & ]:: Send {Blind}{RShift up}{Right}
+;Caps com o WASD, shift direito com esc e shift esquerdo com esc
+
+CapsLock::
+KeyWait, CapsLock
+if (A_PriorKey="CapsLock")
+SetCapsLockState % !GetKeyState("CapsLock", "T")
+Return
+
+CapsLock & w:: Send {Blind}{CapsLock up}{Up}
+CapsLock & a:: Send {Blind}{CapsLock up}{Left}
+CapsLock & s:: Send {Blind}{CapsLock up}{Down}
+CapsLock & d:: Send {Blind}{CapsLock up}{Right}
 LShift & Esc:: Send {Blind}{LShift up}{"}
 RShift & Esc:: Send {Blind}{RShift up}{'}
-
