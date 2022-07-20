@@ -18,3 +18,10 @@ CapsLock & s:: Send {Blind}{CapsLock up}{Down}
 CapsLock & d:: Send {Blind}{CapsLock up}{Right}
 LShift & Esc:: Send {Blind}{LShift up}{"}
 RShift & Esc:: Send {Blind}{RShift up}{'}
+
+;Comando Shift Direito + ] = End, Shift Direito + [ = Home
+;Caso não goste só apagar essas linhas de baixo junto com esses comentarios.
+
+RShift & ]:: Send {Blind}{RShift Up}{End}
+RShift & [:: Send {Blind}{RShift Up}{Home}
+
