@@ -1,11 +1,31 @@
+#Só copie um dos 3 códigos para não dar conflito, escolha o que achar melhor pra você !!!
+
+#Código Um
 #Usando o Caps Lock + WASD você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA. 
-#Using Caps Lock + WASD you will have your UP, LEFT, DOWN, RIGHT directional.
 xmodmap -e "keycode 66 = Mode_switch" &&
 xmodmap -e "keysym a = a A Left" &&
 xmodmap -e "keysym s = s S Down" &&
 xmodmap -e "keysym w = w W Up" &&
 xmodmap -e "keysym d = d D Right"
-#Usando o Shift Direito + Esc você terá suas aspas duplas.
-#Using Right Shift + Esc you will get your double quotes.
+
+
+#Código Dois
+#Usando o Caps Lock + WASD você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA e Usando o Shift Direito + Esc você terá suas aspas duplas.
+xmodmap -e "keycode 66 = Mode_switch" &&
+xmodmap -e "keysym a = a A Left" &&
+xmodmap -e "keysym s = s S Down" &&
+xmodmap -e "keysym w = w W Up" &&
+xmodmap -e "keysym d = d D Right"
 xmodmap -e "keycode 62 = Mode_switch" &&
 xmodmap -e "keycode 9 = Escape NoSymbol quotedbl"
+
+
+#Código Três
+#Usando o Shift Direito + ´ç~] você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA e usando o Shift Direito + Esc você terá suas aspas duplas.
+xmodmap -e "keycode 62 = Mode_switch" &&
+xmodmap -e "keycode 34 = dead_acute dead_grave Up" &&
+xmodmap -e "keycode 48 = dead_tilde dead_circumflex Down" &&
+xmodmap -e "keycode 47 = ccedilla Ccedilla Left" &&
+xmodmap -e "keycode 51 = bracketright braceright Right" &&
+xmodmap -e "keycode 9 = Escape NoSymbol quotedbl"
+
