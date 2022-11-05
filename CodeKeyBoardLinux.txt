@@ -1,7 +1,10 @@
-#Só copie um dos 3 códigos para não dar conflito, escolha o que achar melhor pra você !!!
+#Só copie um dos 4 códigos para não dar conflito, escolha o que achar melhor pra você !!!
+
 
 #Código Um
-#Usando o Caps Lock + WASD você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA. 
+#Como Funciona: Usando o Caps Lock + WASD você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA. 
+#Se gostou desse, copie apartir da proxima linha.
+#!/bin/bash
 xmodmap -e "keycode 66 = Mode_switch" &&
 xmodmap -e "keysym a = a A Left" &&
 xmodmap -e "keysym s = s S Down" &&
@@ -9,8 +12,11 @@ xmodmap -e "keysym w = w W Up" &&
 xmodmap -e "keysym d = d D Right"
 
 
+
 #Código Dois
-#Usando o Caps Lock + WASD você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA e Usando o Shift Direito + Esc você terá suas aspas duplas.
+#Como Funciona: Usando o Caps Lock + WASD você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA e Usando o Shift Direito + Esc você terá suas aspas duplas.
+#Se gostou desse, copie apartir da proxima linha.
+#!/bin/bash
 xmodmap -e "keycode 66 = Mode_switch" &&
 xmodmap -e "keysym a = a A Left" &&
 xmodmap -e "keysym s = s S Down" &&
@@ -20,8 +26,11 @@ xmodmap -e "keycode 62 = Mode_switch" &&
 xmodmap -e "keycode 9 = Escape NoSymbol quotedbl"
 
 
+
 #Código Três
-#Usando o Shift Direito + ´ç~] você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA e usando o Shift Direito + Esc você terá suas aspas duplas.
+#Como Funciona: Usando o Shift Direito + ´ç~] você terá seus direcionais CIMA, ESQUERDA, BAIXO, DIREITA e usando o Shift Direito + Esc você terá suas aspas duplas.
+#Se gostou desse, copie apartir da proxima linha.
+#!/bin/bash
 xmodmap -e "keycode 62 = Mode_switch" &&
 xmodmap -e "keycode 34 = dead_acute dead_grave Up" &&
 xmodmap -e "keycode 48 = dead_tilde dead_circumflex Down" &&
@@ -29,3 +38,20 @@ xmodmap -e "keycode 47 = ccedilla Ccedilla Left" &&
 xmodmap -e "keycode 51 = bracketright braceright Right" &&
 xmodmap -e "keycode 9 = Escape NoSymbol quotedbl"
 
+
+
+#Código Quatro
+#Como Funciona: Feito para usar as setas com o Alt + ´ç~] e aspas duplas é alt + esc. 
+#Se gostou desse, copie apartir da proxima linha.
+#!/bin/bash
+xmodmap -e "keycode 108 = Mode_switch" &&
+xmodmap -e "keycode 34 = dead_acute dead_grave Up" &&
+xmodmap -e "keycode 48 = dead_tilde dead_circumflex Down" &&
+xmodmap -e "keycode 47 = ccedilla Ccedilla Left" &&
+xmodmap -e "keycode 51 = bracketright braceright Right" &&
+xmodmap -e "keycode 9 = Escape NoSymbol quotedbl" &&
+xmodmap -e "keycode 24 = q Q slash" &&
+xmodmap -e "keycode 25 = w W question" &&
+xmodmap -e "keycode 26 = e E degree" &&
+xmodmap -e "keycode 35 = bracketleft braceleft masculine" &&
+xmodmap -e "keycode 97 = slash question degree"
